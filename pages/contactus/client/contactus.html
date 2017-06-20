@@ -1,0 +1,19 @@
+<template name="contactus">
+<h1>Contact Us</h1>
+
+Please contact us by the following ways:
+<table class="table table-bordered">
+	<thead>
+		<tr><th>Method</th><th>Number</th></tr>
+	</thead>
+	<tbody>
+		{{#each team in contactusData}}
+    <tr>
+        <td>{{team.method}}</td>
+        <td>{{team.number}}</td>
+    </tr>
+		{{/each}}
+	</tbody>
+</table>
+
+</template>

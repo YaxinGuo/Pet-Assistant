@@ -1,0 +1,19 @@
+<template name ="layout2">
+    <div class="container">
+      <h1>Yaxin(Selina)'s cool app!</h1>
+      <a herf="{{pathFor 'chat'}}">chat</a>
+      <!-- add a ul link to about contact and chat-->
+      <ul>
+        <li><a href = "{{pathFor 'about'}}">About</a></li>
+        <li><a href = "{{pathFor 'contact'}}">Contact</a></li>
+        <li><a href = "{{pathFor 'chat'}}">Chat</a></li>
+      </ul>
+      {{>yield}}
+    </div>
+
+    <ul>
+      <li><a href = "{{pathFor 'about'}}">About</a></li>
+      <li><a href = "{{pathFor 'contact'}}">Contact</a></li>
+      <li><a href = "{{pathFor 'chat'}}">Chat</a></li>
+    </ul>
+</template>

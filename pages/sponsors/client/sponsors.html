@@ -1,0 +1,36 @@
+<template name="sponsors">
+
+	<h1>We wish we had these sponsors!</h1>
+	{{today}} is today's date?
+	<h2>Form elements</h2>
+	Starting Date: <input id="thedate" type="date"> <br>
+	Bg color: <input id="thedate" type="color"> <br>
+	<button>Push at your own risk</button><hr>
+<a href="http://www.brandeis.edu"
+	 class="btn btn-danger btn-lg">
+	 push </a>
+	<h2>Sponsors</h2>
+	<table class="table table-bordered">
+	<!--
+		<thead>
+			<tr><th>Sponsor</th><th>SponsorData</th></tr>
+		</thead>
+	-->
+		<tbody>
+			{{#each s in sponsorData}}
+				<tr>
+					<td>{{> teamrow2 s=s}}</td>
+				</tr>
+			{{/each}}
+		</tbody>
+	</table>
+
+
+</template>
+
+<template name="teamrow2">
+	<tr>
+		<td>{{s.name}}</td>
+		<td>{{s.amt}}</td>
+	</tr>
+</template>

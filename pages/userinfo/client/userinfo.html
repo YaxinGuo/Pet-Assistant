@@ -1,0 +1,38 @@
+<template name="userinfo">
+
+  <h1>User Information</h1>
+  {{#if currentUser}}
+      <h1> Welcome back! </h1>
+      <p>Please click submit button to add a new pet into the petlist, and click the heart to delete a pet from petlist</p>
+      {{>showpet}}
+      <br>
+      {{>addpet}}
+  {{else}}
+      <h2>If you do not have an account, please create an account to see the info</h2>
+      <h2>If you already registered, please sign in to see the info</h2>
+  {{/if}}
+</template>
+
+<template name="petrow">
+      {{pet.name}}--{{pet.birthyear}}--{{pet.gender}}--{{pet.ownername}} ({{pet.createAt}})
+      <span class="glyphicon glyphicon-heart" aria-hidden="true"> </span>
+</template>
+
+<template name="addpet">
+  <ul>
+    <li>Pet's Name: <input type="text" placeholder="pet's name" id="name"></li>
+    <li>Birthyear <input type="text" placeholder="birthyear" id="birthyear"></li>
+    <li>Gender <input type="text" placeholder="gender" id="gender"></li>
+    <li>Owner <input type="text" placeholder="owner's name" id="ownername"></li>
+  </ul>
+  <button id="addpet" class="btn btn-info btn0lg">Submit</button><hr>
+
+</template>
+
+<template name="showpet">
+  <ul>
+    {{#each p in petlist}}
+      <li>{{> petrow pet=p}}</li>
+    {{/each}}
+  </ul>
+</template>
