@@ -14,16 +14,16 @@
 </template>
 
 <template name="petrow">
-      {{pet.name}}--{{pet.birthyear}}--{{pet.gender}}--{{pet.ownername}} ({{pet.createAt}})
-      <span class="glyphicon glyphicon-heart" aria-hidden="true"> </span>
+      {{pet.name}}--{{pet.birthyear}}--{{pet.gender}}--{{pet.ownername}} {{pet.createAt}}
+      <span class="glyphicon glyphicon-heart" aria-hidden="true" id="erase">Delete </span>
 </template>
 
 <template name="addpet">
   <ul>
-    <li>Pet's Name: <input type="text" placeholder="pet's name" id="name"></li>
-    <li>Birthyear <input type="text" placeholder="birthyear" id="birthyear"></li>
-    <li>Gender <input type="text" placeholder="gender" id="gender"></li>
-    <li>Owner <input type="text" placeholder="owner's name" id="ownername"></li>
+    <li>Pet's Name: <input type="text" placeholder="pet's name" id="name"></li><br>
+    <li>Birthyear <input type="text" placeholder="birthyear" id="birthyear"></li><br>
+    <li>Gender <input type="text" placeholder="gender" id="gender"></li><br>
+    <li>Owner <input type="text" placeholder="owner's name" id="ownername"></li><br>
   </ul>
   <button id="addpet" class="btn btn-info btn0lg">Submit</button><hr>
 
