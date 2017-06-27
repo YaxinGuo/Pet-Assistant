@@ -1,0 +1,137 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+html {
+	margin: 0;
+	padding: 0;
+	}
+h1 {
+  font-family: fantasy;
+  font-size: 80px;
+  font-style: italic;
+  font-weight: bold;
+  font-height: 26.4px;
+  font-variant:normal;
+	letter-spacing: 5px;
+  color: black;
+	background-image:url(images/claw.jpg);
+	background-size: 150px 60px;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+h2 {
+  font-family: fantasy;
+  font-size: 45px;
+  font-weight: bold;
+  font-height: 26.4px;
+  font-variant:normal;
+  color: rgb(128,128,128);
+}
+
+h2-1 {
+  font-family: fantasy;
+  font-size: 45px;
+  font-weight: bold;
+  font-height: 26.4px;
+  font-variant:normal;
+  color: orange;
+}
+
+h2-2 {
+  font-family: fantasy;
+  font-size: 45px;
+  font-weight: bold;
+  font-height: 26.4px;
+  font-variant:normal;
+  color: brown;
+}
+
+h2-3 {
+  font-family: fantasy;
+  font-size: 45px;
+  font-weight: bold;
+  font-height: 26.4px;
+  font-variant:normal;
+  color: green;
+}
+
+h2-4 {
+  font-family: fantasy;
+  font-size: 45px;
+  font-weight: bold;
+  font-height: 26.4px;
+  font-variant:normal;
+  color: pink;
+}
+
+h2-5 {
+  font-family: fantasy;
+  font-size: 45px;
+  font-weight: bold;
+  font-height: 26.4px;
+  font-variant:normal;
+  color: blue;
+}
+
+body {
+  font-family: fantasy;
+  font-size: 24px;
+	line-height: 1.88889;
+	background-color:rgb(255,255,255);
+	margin: 0;
+	padding: 0;
+	}
+
+body {
+	font-family: fantasy;
+	font-size: 24px;
+	line-height: 1.88889;
+	background-color:rgb(255,255,255);
+	background-image: url(https://goo.gl/images/XdfqH4);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+	margin: 0;
+	padding: 0;
+	}
+
+p {
+	margin-top: 0;
+	text-align: justify;
+  color: rgb(128,128,128);
+	}
+h3 {
+	font-family: monospace;
+	font-size: 20px;
+  font-height: 26.4px;
+  font-variant:normal;
+	color: rgb(128,128,128);
+	}
+h4 {
+  font-family: fantasy;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  font-height: 26.4px;
+  font-variant:normal;
+	letter-spacing: 5px;
+  color: rgb(129,91,205);
+}
+div.user{
+	background-image:url(images/cat3.jpg);
+	background-position: right;
+	background-color: rgb(229,229,227);
+	background-repeat: no-repeat;
+}
+div.contact{
+	background-color: rgb(229,229,227);
+}

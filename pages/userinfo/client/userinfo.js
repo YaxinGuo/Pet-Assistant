@@ -44,15 +44,13 @@ Template.petrow.helpers({
 })
 
 Template.petrow.events({
-  'click #erase'(elt,instance){
+  'click span'(elt,instance) {
     console.dir(this);
     console.log(this.pet._id);
-    Meteor.call('petname.remove',this.pet._id);
-  /*  if (Meteor.userId()==this.person.owner){
-       Pet.remove(this.pet._id);
+    if (this.pet.owner==Meteor.userId()){
+      Meteor.call('id.remove',this.pet._id);
     }else{
       alert("Why are you deleting someone else's entry?");
     }
-    */
   }
 })
