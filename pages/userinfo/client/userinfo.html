@@ -1,17 +1,18 @@
 <template name="userinfo">
-  <div class="user">
   <h1>User Information</h1>
   {{#if currentUser}}
       <h2> Welcome back! </h2>
       <p>Please click submit button to add a new pet into the petlist, and click the heart to delete a pet from petlist</p>
       {{>showpet}}
       <br>
+      <div class="user">
       {{>addpet}}
+    </div>
   {{else}}
       <h2>If you do not have an account, please create an account to see the info</h2>
       <h2>If you already registered, please sign in to see the info</h2>
   {{/if}}
-</div>
+
 </template>
 
 
