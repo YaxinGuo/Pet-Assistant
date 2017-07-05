@@ -19,7 +19,8 @@
 
 
 <template name="petrow">
-      <h2-1>{{pet.name}}--{{pet.birthyear}}--{{pet.gender}}--{{pet.ownername}}</h2-1>
+      <h2-1>{{pet.name}}--{{pet.birthyear}}--{{pet.gender}}--{{pet.ownername}}</h2-1><br>
+      {{pet.pic}}
       <span class="glyphicon glyphicon-heart" aria-hidden="true"><h4>Delete</h4> </span>
 </template>
 
@@ -28,9 +29,13 @@
     <li>Pet's Name: <input type="text" placeholder="pet's name" id="name"></li><br>
     <li>Birthyear <input type="text" placeholder="birthyear" id="birthyear"></li><br>
     <li>Gender <input type="text" placeholder="gender" id="gender"></li><br>
+    <li>Pet Photo <input type="file" name="pic" accept="image/*" id="pic"></li><br>
     <li>Owner <input type="text" placeholder="owner's name" id="ownername"></li><br>
   </ul>
-  <button id="addpet" class="btn btn-info btn0lg">Submit</button><hr>
+  <input type="checkbox" id="agree"> I agree to allow my info to be published
+  <hr>
+  <button id="addpet" class="btn btn-info btn0lg">Submit</button>
+  <hr>
 
 </template>
 

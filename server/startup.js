@@ -1,9 +1,8 @@
 Meteor.startup(function(){
 	// code to run on server at startup
   Pet.remove({});  // clear the database
-  Pet.insert({name:'Xiaoai',birthyear:2016,gender:'Female',ownername:'Selina'});
-  Pet.insert({name:'Youzi',birthyear:2016,gender:'Male',ownername:'Yidi'});
-
+//  Pet.insert({name:'Xiaoai',birthyear:2016,gender:'Female',ownername:'Selina',pic:url="images/cat4.jpg"'images/cat4.jpg'});
+//  Pet.insert({name:'Youzi',birthyear:2016,gender:'Male',ownername:'Yidi',pic:'images/cat2.jpg'});
 
 	//if (Pokedex.find().count()==0){
 	//	console.log("Importing Pokedex to db")
