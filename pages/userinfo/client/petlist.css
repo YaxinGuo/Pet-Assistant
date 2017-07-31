@@ -1,0 +1,41 @@
+.petlist table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: fantasy;
+    font-size: 10px;
+}
+
+.petlist td, th {
+    border: 1px solid rgb(246,218,234);
+    text-align: left;
+    padding: 8px;
+}
+
+.petlist tr:nth-child(even) {
+    background-color: rgb(246,218,234);
+}
+
+.petinfo {
+  	order: 2;
+  	flex: 1 1 auto;
+  	align-self: auto;
+  	min-width:0;
+  	min-height:auto;
+}
+
+.showpet {
+  	order: 3;
+  	flex: 1 1 auto;
+  	align-self: auto;
+  	min-width:0;
+  	min-height:auto;
+}
+
+.addpet {
+  	order: 4;
+  	flex: 1 1 auto;
+  	align-self: auto;
+  	min-width:0;
+  	min-height:auto;
+}

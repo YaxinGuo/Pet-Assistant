@@ -1,26 +1,40 @@
-<template name="userinfo">
+<template name="petlist">
+  <div name="petinfo" class="petinfo">
   <h1>User Information</h1>
   {{#if currentUser}}
       <h2> Welcome back! </h2>
       <p>Please click submit button to add a new pet into the petlist, and click the heart to delete a pet from petlist</p>
-      {{>showpet}}
+      {{> showpet}}
       <br>
-      <div class="user">
-      <br>
-      {{>addpet}}
-    </div>
+      {{> addpet}}
   {{else}}
       <h2>If you do not have an account, please create an account to see the info</h2>
       <h2>If you already registered, please sign in to see the info</h2>
   {{/if}}
-
+</div>
 </template>
 
 
-
 <template name="petrow">
-      <h2-1>{{pet.name}}--{{pet.birthyear}}--{{pet.gender}}--{{pet.ownername}}</h2-1><br>
-      {{pet.pic}}
+  <table name="petrow" class="petrow" id="petrow">
+    <tbody>
+      <tr>
+        <td>{{pet.name}}</td>
+      </tr>
+
+      <tr>
+        <td>{{pet.birthyear}}</td>
+      </tr>
+
+      <tr>
+        <td>{{pet.gender}}</td>
+      </tr>
+
+      <tr>
+        <td>{{pet.ownername}}</td>
+      </tr>
+    </tbody>
+  </table>
       <span class="glyphicon glyphicon-heart" aria-hidden="true"><h4>Delete</h4> </span>
 </template>
 
@@ -29,7 +43,6 @@
     <li>Pet's Name: <input type="text" placeholder="pet's name" id="name"></li><br>
     <li>Birthyear <input type="text" placeholder="birthyear" id="birthyear"></li><br>
     <li>Gender <input type="text" placeholder="gender" id="gender"></li><br>
-    <li>Pet Photo <input type="file" name="pic" accept="image/*" id="pic"></li><br>
     <li>Owner <input type="text" placeholder="owner's name" id="ownername"></li><br>
   </ul>
   <input type="checkbox" id="agree"> I agree to allow my info to be published

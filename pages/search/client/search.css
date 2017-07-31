@@ -9,6 +9,80 @@ body {font-family: Verdana,sans-serif;}
   margin: auto;
 }
 
+.hamster{
+	order: 2;
+	flex: 1 1 auto;
+	align-self: auto;
+	min-width:0;
+	min-height:auto;
+}
+
+.hamsterpic{
+	order: 3;
+	flex: 1 1 auto;
+	align-self: auto;
+	min-width:0;
+	min-height:auto;
+}
+
+.cat{
+	order: 4;
+	flex: 1 1 auto;
+	align-self: auto;
+	min-width:0;
+	min-height:auto;
+}
+
+.catpic{
+	order: 5;
+	flex: 1 1 auto;
+	align-self: auto;
+	min-width:0;
+	min-height:auto;
+}
+
+.rabbit{
+	order: 6;
+	flex: 1 1 auto;
+	align-self: auto;
+	min-width:0;
+	min-height:auto;
+}
+
+.rabbitpic{
+	order: 7;
+	flex: 1 1 auto;
+	align-self: auto;
+	min-width:0;
+	min-height:auto;
+}
+
+.dog{
+	order: 8;
+	flex: 1 1 auto;
+	align-self: auto;
+	min-width:0;
+	min-height:auto;
+}
+
+.dogpic{
+	order: 9;
+	flex: 1 1 auto;
+	align-self: auto;
+	min-width:0;
+	min-height:auto;
+}
+
+.flex{
+	order: 10;
+	flex: 1 1 auto;
+	align-self: auto;
+	min-width:0;
+	min-height:auto;
+}
+
+
+
 /* Caption text */
 /*.text {
   color: pink;
@@ -86,6 +160,15 @@ body {font-family: Verdana,sans-serif;}
                     "width:auto" are buggy in Gecko and Webkit, at least.
                     See http://bugzil.la/731886 for more info.) */
     transition: width 0.7s ease-out;
+}
+
+#searchbutton {
+  background-color: pink;
+  border-color: lightpink;
+  border-width: 5px;
+  font-size:15px;
+  padding: 12px 28px;
+  color:purple;
 }
 
 /* colors */

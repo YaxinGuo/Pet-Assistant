@@ -1,0 +1,19 @@
+.contactus table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: fantasy;
+    font-size: 10px;
+  
+
+}
+
+.contactus td, th {
+    border: 1px solid white;
+    text-align: left;
+    padding: 8px;
+}
+
+.contactus tr:nth-child(even) {
+    background-color: white;
+}

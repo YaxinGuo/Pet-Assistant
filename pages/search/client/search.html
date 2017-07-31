@@ -1,52 +1,17 @@
 <template name = "search">
 		<h1>Search a breed of pet...</h1>
-		<input type="text" name="search" placeholder="Search..." width=100%>
-		<span class="glyphicon glyphicon-heart" aria-hidden="true" id="erase"><h4>Search</h4></span>
+		<input type="text" name="search" placeholder="Search..." width=100% id="search">
+
+		<button type="button" class="btn btn-default" id="searchbutton">
+      <span class="glyphicon glyphicon-heart" aria-hidden="true" id="erase">Search</span>
+    </button><hr>
+
 		<br><br>
-
-		<!--<div class="col-md-5 col-md-offset-1 img-rounded">
-		-->
-
-		<div class="slideshow-container">
-
-	  <div class="mySlides fade">
-	    <div class="numbertext">1 / 4</div>
-	    <img src="images/1.jpg" style="width:100%">
-
-	  </div>
-
-	  <div class="mySlides fade">
-	    <div class="numbertext">2 / 4</div>
-	    <img src="images/2.jpg" style="width:100%">
-
-	  </div>
-
-	  <div class="mySlides fade">
-	    <div class="numbertext">3 / 4</div>
-	    <img src="images/3.jpg" style="width:100%">
-
-	  </div>
-
-	  <div class="mySlides fade">
-	    <div class="numbertext">4 / 4</div>
-	    <img src="images/4.jpg" style="width:100%">
-
-	  </div>
-
-	  </div>
-	  <br>
-
-		<div style="text-align:center">
-	    <span class="dot"></span>
-	    <span class="dot"></span>
-	    <span class="dot"></span>
-	    <span class="dot"></span>
-	  </div>
 
 
 
 	<div class="row">
-	<div class="col-md-4 col-md-offset-1 img-circle">
+	<div class="hamster col-md-4 col-md-offset-1 img-circle">
 	 <a herf="https://en.wikipedia.org/wiki/Hamster"> <h2-3> Hamster</h2-3> </a>
 	  <ul>
 	    <li><a href="https://en.wikipedia.org/wiki/Golden_hamster">Golden Hamster</a></li>
@@ -55,13 +20,13 @@
 			<li><a href="https://en.wikipedia.org/wiki/Roborovski_hamster">Roborovski hamster</a></li>
 	  </ul><br>
 	</div>
-	<div class="col-md-4 col-md-offset-1 img-circle">
+	<div class="hamsterpic col-md-4 col-md-offset-1 img-circle">
 	  <img src="images/hamster1.jpg" width="100%" class="img-circle">
 	</div>
 	</div>
 
 	<div class="row">
-	<div class="col-md-5 col-md-offset-1 img-rounded">
+	<div class="cat col-md-5 col-md-offset-1 img-rounded">
 	  <h2-4> CAT </h2-4>
 	  <ul>
 	    <li><a href="https://en.wikipedia.org/wiki/Exotic_Shorthair">Exotic Shorthair</a></li>
@@ -74,13 +39,13 @@
 			<li><a href="https://en.wikipedia.org/wiki/Siberian_cat">Siberian Cat</a></li>
 	  </ul><br>
 	</div>
-	<div class="col-md-5 col-md-offset-1 img-rounded">
+	<div class="catpic col-md-5 col-md-offset-1 img-rounded">
 	  <img src = "images/cat1.jpg" width="100%">
 	</div>
 	</div>
 
 	<div class="row">
-	<div class="col-md-4 col-md-offset-1 img-circle">
+	<div class="rabbit col-md-4 col-md-offset-1 img-circle">
 	  <h2-5> Rabbit </h2-5>
 	  <ul>
 	    <li><a href="https://en.wikipedia.org/wiki/Holland_Lop">Holland Lop</a></li>
@@ -88,12 +53,12 @@
 	    <li><a href="https://en.wikipedia.org/wiki/English_Lop">English Lop</a></li>
 	  </ul><br>
 	</div>
-	<div class="col-md-4 col-md-offset-1 img-circle">
+	<div class="rabbitpic col-md-4 col-md-offset-1 img-circle">
 	  <img src = "images/rabbit1.jpg" width="100%">
 	</div>
 	</div>
 
-	<div class="col-md-4 col-md-offset-1 img-circle">
+	<div class="dog col-md-4 col-md-offset-1 img-circle">
 	<h2-2>DOG</h2-2>
 	<ul>
 	  <li><a href="https://en.wikipedia.org/wiki/Golden_Retriever">Golden Retriever</a></li>
@@ -105,7 +70,7 @@
 		<li><a href="https://en.wikipedia.org/wiki/Pomeranian_(dog)">Pomeranian</a></li>
 	</ul><br>
 	</div>
-	<div class="col-md-4 col-md-offset-1 img-circle">
+	<div class="dogpic col-md-4 col-md-offset-1 img-circle">
 	<img src="images/dog1.jpg" width="100%">
 	</div>
 

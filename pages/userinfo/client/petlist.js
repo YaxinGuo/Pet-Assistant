@@ -1,4 +1,4 @@
-Template.userinfo.onCreated(function(){
+Template.petlist.onCreated(function(){
   Meteor.subscribe('pet');
 });
 
@@ -12,7 +12,6 @@ Template.addpet.events({
     const year = instance.$('#birthyear').val();
     const gender = instance.$('#gender').val();
     const ownername = instance.$('#ownername').val();
-    const pic = instance.$('#pic').val();
     const birthyear = parseInt(year);
     const agree = $("#agree").is(":checked");
 
@@ -22,7 +21,6 @@ Template.addpet.events({
     instance.$('#birthyear').val("");
     instance.$('#gender').val("");
     instance.$('#ownername').val("");
-    instance.$('#pic').val("");
     pets = Pet.find({owner:Meteor.userId()}).fetch();
 
 
@@ -30,7 +28,6 @@ Template.addpet.events({
                    birthyear:birthyear,
                    gender:gender,
                    ownername:ownername,
-                   pic:pic,
                    owner:Meteor.userId()};
     if (agree) {
           Meteor.call('petname.insert',petname);
